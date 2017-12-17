@@ -1,5 +1,6 @@
 class Ride < ActiveRecord::Base
-  
+  include Location
+
   attr_accessor :conditions
 
   belongs_to :cab

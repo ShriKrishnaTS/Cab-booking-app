@@ -13,6 +13,13 @@ class RideController < ApplicationController
     end
   end
 
+   #PUT ride/1/ride_start
+  #PUT ride/:id/ride_start
+  def start_ride
+    message = Ride.find(params[:id]).start
+    render json: {message: message}
+  end
+
   private
   def ride_params
     params.permit(:latitude, :longitude, :color)
