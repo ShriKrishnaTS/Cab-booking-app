@@ -28,5 +28,17 @@ GET  - /ride/:id/fare		  - Gives total fare of the ride
 Following are the assumptions made throughout the project - 
 1. Unfortunately, earth is considered to be flat. Meaning, the distance between the source and destination is calculated using pythagoras theorem 
 2. The formula used for this calculation is "Math.sqrt((x1 - x2)**2 + (y1 - y2)**2).round(2)"
+3. Fare is displayed considering the following criteria -  
+a. Price per Kilometer    - 2.0
+b. Price per Minute       - 1.0
+c. Pink Cab               - 5.0
+4. Total number of migrations used         - 2
+5. Total number of cabs created via seeds  - 5
+
+Tech Spec - 
+Ruby version  - 2.3.1
+Rails version - 5.0.6
+rvm version   - 1.27.0
+
 
 
