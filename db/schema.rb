@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171217202445) do
+ActiveRecord::Schema.define(version: 20171217204127) do
 
   create_table "cabs", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.float    "latitude",   limit: 24
@@ -19,6 +19,17 @@ ActiveRecord::Schema.define(version: 20171217202445) do
     t.string   "color"
     t.datetime "created_at",                            null: false
     t.datetime "updated_at",                            null: false
+  end
+
+  create_table "rides", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+    t.float    "start_latitude",  limit: 24
+    t.float    "start_longitude", limit: 24
+    t.integer  "cab_id"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.float    "end_latitude",    limit: 24
+    t.float    "end_longitude",   limit: 24
+    t.integer  "status",                     default: 0
   end
 
 end
