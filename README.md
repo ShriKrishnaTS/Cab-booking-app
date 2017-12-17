@@ -12,5 +12,6 @@ POST - /ride -  Assigns a cab if avaliable -      {"ride"=>{"latitude"=>"3", "lo
 PUT	 - /ride/:id/start_ride	- Starts a ride		
 
 PUT	 - /ride/:id/end_ride	- Ends an active ride-  {"ride"=>{"latitude"=>"30", "longitude"=>"2"}}
+
 GET  - /ride/:id/fare		  - Gives total fare of the ride	
 
