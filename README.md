@@ -7,10 +7,10 @@ Following is the step by step structure and workflow of the project -
 5. Run rake db:seed in order to populate the db. 
 6. Following are the APIs - 
 
-METHOD	   ENDPOINT			  USAGE			                        RETURNS			    Parameters passed
+POST - /ride -  Assigns a cab if avaliable -      {"ride"=>{"latitude"=>"3", "longitude"=>"4"}}
 
-POST	     /ride			    Assigns a cab if available	    Cab arrives	     {"ride"=>{"latitude"=>"3", "longitude"=>"4"}}
-PUT	 /ride/:id/start_ride	Starts a ride			              Starts a ride	
-PUT	/ride/:id/end_ride	  Ends an active ride		          Ends a ride	     {"ride"=>{"latitude"=>"30", "longitude"=>"2"}}
-GET /ride/:id/fare		    Gives total fare of the ride	  Gives total fare	
+PUT	 - /ride/:id/start_ride	- Starts a ride		
+
+PUT	 - /ride/:id/end_ride	- Ends an active ride-  {"ride"=>{"latitude"=>"30", "longitude"=>"2"}}
+GET  - /ride/:id/fare		  - Gives total fare of the ride	
 
