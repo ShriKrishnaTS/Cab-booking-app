@@ -36,8 +36,11 @@ c. Pink Cab               - 5.0
 5. Total number of cabs created via seeds  - 5
 
 Tech Spec - 
+
 Ruby version  - 2.3.1
+
 Rails version - 5.0.6
+
 rvm version   - 1.27.0
 
 

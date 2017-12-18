@@ -7,7 +7,8 @@ class Ride::Started < Ride::BaseRideState
     ride = @ride.update_attributes(end_time: DateTime.current,
                                          end_latitude: destination[:end_latitude],
                                          end_longitude: destination[:end_longitude],
-                                         status: 'ended')
+                                         status: 'ended',
+                                         payment_amount: payment_amount)
     if ride
       @ride.cab.unassign
       'Ride Ended Successfully'
